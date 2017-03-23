@@ -7,39 +7,49 @@
   "title": "New",
   "branch": "master",
   "style": {
-    "name": "Humanist",
+    "name": "Brutalist",
     "componentSet": {
       "nav": "nav/BasicNav",
-      "header": "header/LightBannerHeader",
-      "article": "article/ReaderArticle",
+      "header": "header/BasicHeader",
+      "article": "article/MarkdownArticle",
       "footer": "footer/BasicFooter"
     },
-    "fontFamily": "Athelas, Georgia, serif",
-    "heading": {
-      "fontWeight": 400,
-      "textTransform": "uppercase",
-      "letterSpacing": "0.1em"
+    "fontFamily": "Consolas, \"Liberation Mono\", Menlo, Courier, monospace",
+    "heading": {},
+    "typeScale": [
+      48,
+      32,
+      20,
+      18,
+      16,
+      14,
+      12
+    ],
+    "layout": {
+      "maxWidth": 1024,
+      "fluid": true
     },
     "colors": {
-      "text": "#121212",
+      "text": "#333",
       "background": "#fff",
-      "primary": "#ee5544",
-      "secondary": "#005499",
-      "highlight": "#00bd78",
-      "border": "#ddd",
-      "muted": "#f3f3f3"
-    },
-    "layout": {
-      "maxWidth": 768
+      "primary": "#666",
+      "secondary": "#888",
+      "highlight": "#1f80ff",
+      "muted": "#f6f6f6",
+      "border": "#eee"
     }
   },
   "content": [
     {
-      "component": "nav",
+      "component": "footer",
       "links": [
         {
           "href": "https://github.com/okayjeffrey/new",
           "text": "GitHub"
+        },
+        {
+          "href": "https://github.com/okayjeffrey",
+          "text": "okayjeffrey"
         }
       ]
     },
@@ -57,26 +67,6 @@
           "component": "ui/GithubButton",
           "user": "okayjeffrey",
           "repo": "new"
-        }
-      ]
-    },
-    {
-      "component": "article",
-      "metadata": {
-        "source": "github.readme"
-      },
-      "html": "\n\n"
-    },
-    {
-      "component": "footer",
-      "links": [
-        {
-          "href": "https://github.com/okayjeffrey/new",
-          "text": "GitHub"
-        },
-        {
-          "href": "https://github.com/okayjeffrey",
-          "text": "okayjeffrey"
         }
       ]
     }
